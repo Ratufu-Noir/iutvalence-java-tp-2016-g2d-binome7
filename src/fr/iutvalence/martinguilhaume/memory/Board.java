@@ -1,18 +1,31 @@
 package fr.iutvalence.martinguilhaume.memory;
 
+/**
+ * Memory board.
+ * 
+ * @author Guilhaume Martin
+ * @version TODO
+ */
 public class Board {
-   
+	/** Size of the board. */
     private final Card cards[][] = new Card[2][2];
 
-    //Dimension du plateu de jeu
-    
+    /** Position of cards in the board. */
     public Board(){
     	cards[0][0] = new Card('A');
     	cards[0][1] = new Card('B');
     	cards[1][0] = new Card('B');
     	cards[1][1] = new Card('A');
-
+    	
+    	System.out.println(cards[0][0]);
+    	
+    	cards[0][0].flip();
+    	
+    	System.out.println(cards[0][0]);
+    	
+    	cards[0][0].flip();
+    	
+    	System.out.println(cards[0][0]);
+    	
     }
-
-
 }
