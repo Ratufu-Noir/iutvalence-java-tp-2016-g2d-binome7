@@ -16,16 +16,9 @@ public class Board {
     	cards[0][1] = new Card('B');
     	cards[1][0] = new Card('B');
     	cards[1][1] = new Card('A');
-    	
-    	System.out.println(cards[0][0]);
-    	
-    	cards[0][0].flip();
-    	
-    	System.out.println(cards[0][0]);
-    	
-    	cards[0][0].flip();
-    	
-    	System.out.println(cards[0][0]);
-    	
+    }
+   
+    public Card flip(int x, int y) {
+    	// TODO
     }
 }

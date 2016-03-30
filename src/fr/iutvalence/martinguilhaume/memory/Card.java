@@ -30,10 +30,7 @@ public class Card {
 
 	/** Return the card. */
 	public void flip() {
-		if 
-		else
-			!this.hidden;
-		// TODO retourner la carte.
+		hidden  = (!this.hidden);
 	}
 
 	@Override
