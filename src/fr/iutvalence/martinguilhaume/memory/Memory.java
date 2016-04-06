@@ -16,6 +16,7 @@ public class Memory {
 	public static void main(String[] args) {
 		Game game = new Game();
 		game.run();
+		// TODO Nothing to do here
 		Player player = new Player(0);
 		System.out.println ();
 	}
