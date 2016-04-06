@@ -18,7 +18,17 @@ public class Board {
     	cards[1][1] = new Card('A');
     }
    
-    public Card flip(int x, int y) {
-    	// TODO
+    public void flip(int x, int y) {
+    	cards[x][y].flip();
+    }
+    
+    public boolean isGameWon() {
+    	 for(int x = 0 ; x < cards.length; x++ ){
+    	      for(int y = 0; y< cards.length; y++){
+            if (c.checkCards() == false) {
+                return false;
+            }
+        }
+        return true;
     }
 }

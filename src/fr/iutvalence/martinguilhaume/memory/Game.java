@@ -19,39 +19,34 @@ public class Game {
 
     /** TODO. */
     public void run() {
-        boolean victory = false;
-
-        while (!victory) {
+        while (!board.isGameWon()) {
             // TODO Demander les coordonn�es de la carte 1;
             int x1 = 0;
             int y1 = 0;
 
-            // TODO Retourner la carte 1
+            char c1 = board.flip(x1, y1);
 
-            // TODO Demander les coordonn�es de la carte 2
+
+            // TODO Demander les coordonn�es de la carte 2;
             int x2 = 1;
             int y2 = 1;
+            
+            char c2 = board.flip(x2, y2);
 
-            // TODO Retourner la carte 2
+            // TODO Afficher la board.
+           
+                  System.out.println(board);
 
             // TODO V�rifier et agir en cons�quence
-
-            // TODO V�rifier victoire
-
+            
         }
+        
+        System.out.println("You win!");
     }
 
-    public boolean checkCards(Card card1, Card card2) {
-        return Objects.equals(card1.symbol(), card2.symbol());
+    public boolean checkCards(char card1, char card2) {
+        return card1 == card2;
     }
-
-    // TODO Move in board
-    public boolean isGameWon() {
-        for (Card c : this.cards) {
-            if (c.checkCards() == false) {
-                return false;
-            }
-        }
-        return true;
-    }
+    
+    
 }
