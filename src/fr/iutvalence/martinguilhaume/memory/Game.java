@@ -35,10 +35,11 @@ public class Game {
 
             // TODO Afficher la board.
            
-                  System.out.println(board);
+            System.out.println(board);
 
             // TODO V�rifier et agir en cons�quence
-            
+            checkCards(c1,c2);
+            if (c1 == c2);
         }
         
         System.out.println("You win!");

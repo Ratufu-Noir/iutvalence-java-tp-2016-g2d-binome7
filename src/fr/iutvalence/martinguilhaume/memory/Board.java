@@ -8,7 +8,7 @@ package fr.iutvalence.martinguilhaume.memory;
  */
 public class Board {
 	/** Size of the board. */
-    private final Card cards[][] = new Card[2][2];
+    final Card cards[][] = new Card[2][2];
 
     /** Position of cards in the board. */
     public Board(){
@@ -25,7 +25,7 @@ public class Board {
     public boolean isGameWon() {
     	 for(int x = 0 ; x < cards.length; x++ ){
     	      for(int y = 0; y< cards.length; y++){
-            if (c.checkCards() == false) {
+            if (cards[x][y].checkCards() == false) {
                 return false;
             }
         }
