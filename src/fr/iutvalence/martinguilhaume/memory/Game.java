@@ -32,8 +32,6 @@ public class Game {
             int y2 = 1;
             
             char c2 = board.flip(x2, y2);
-
-            // TODO Afficher la board.
            
             System.out.println(board);
 
