@@ -1,6 +1,5 @@
 package fr.iutvalence.martinguilhaume.memory;
 
-import java.util.Objects;
 
 /**
  * Memory game.
@@ -20,14 +19,12 @@ public class Game {
     /** TODO. */
     public void run() {
         while (!board.isGameWon()) {
-            // TODO Demander les coordonn�es de la carte 1;
             int x1 = 0;
             int y1 = 0;
 
             char c1 = board.flip(x1, y1);
 
 
-            // TODO Demander les coordonn�es de la carte 2;
             int x2 = 1;
             int y2 = 1;
             
